@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="pt-br">
+    <title>Monteiro Filmes</title>
+    <!--Como não usei CSS, todos os estilos estão aqui, ou dentro das próprias tags -->
+    <style>         
+         html {
+            background-color: #52006A;
+        }
+        header {
+            background-color: #CD113B;
+            font-size: 100px;
+            text-align: center;
+            font-family: cursive;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        nav {
+            background-color:yellow;
+            font-family:cursive;
+            text-align: center;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        div.row {
+            margin-inline:5%;
+            display: flex;
+        }
+        div.form {
+            background-color: white;
+            width: 500px;
+            padding: 15px;
+            margin: 30px;
+            border-radius: 15px;
+            font-family: cursive;
+        }
+        div.direita { 
+            background-color: white;
+            width: 500px;
+            height: min-content;
+            padding: 15px;
+            margin: 30px;
+            border-radius: 15px;
+            font-family: cursive;
+            
+        }
+        footer {
+            background-color:yellow;
+            color: #52006A;
+            border-radius: 15px;
+            font-family: cursive;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header> <!--Cabeçalho-->
+        <a href="https://www.freepik.com" title="Freepik"><img src="fotos/popcorn.png" name="popcorn" width="100"></a> <!--Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>-->
+        <a href="index.html" style="color: #FFA900;text-decoration-line: none;" >Monteiro Filmes</a>
+            <a href="https://www.freepik.com" title="Freepik"><img src="fotos/popcorn.png" name="popcorn" width="100"></a> <!--Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>-->
+    </header>
+
+    <nav> <!--Barra de navegação principal-->
+        <a href="exibicao.html" style="text-decoration-line: none;color: black;padding: 20px;">Em exibição</a>
+        <a href="nos.html" style="text-decoration-line: none;color: black;padding: 20px;">Sobre nós</a>
+        <a href="contato.html" style="text-decoration-line: none;color: black;padding: 20px;" >Entre em contato</a>
+    </nav>
+
+    <br>
+
+    <div name="texto" > <!--Subtítulo da página-->
+        <h1 style="color: white; font-family: cursive; font-size: 40px;padding-left: 7%;">Contato</h1>
+        <p style="color: white;font-family: sans-serif;padding-left: 2%;" >A <b>Monteiro Filmes</b> está sempre aberta à responder
+            dúvidas e sugestões, envie-nos seus comentários pelo formulário a seguir:</p>
+    </div>
+
+    <div class="row">
+        <div class="form"> <!--Formulário para contato-->
+            <form action="contato.php" method="GET">
+                <h1>Envie uma mensagem!</h1>
+                <p><input type="text" placeholder="Nome" size="40" style="padding:10px;"></p> 
+                <p><input type="email" placeholder="E-mail" size="40" style="padding:10px;"></p>
+                <p><select style="padding:10px;">
+                    <option>Sugestões</option>
+                    <option>Dúvidas</option>
+                    <option>Reclamações</option>
+                    <option>Outros</option>
+                </select></p>
+                <p><input type="text" size="70" placeholder="Comentário" style="padding-bottom: 50px;padding-top: 5px;padding-inline-start: 10px;"></p>
+                <input type="submit" value="Enviar" >
+            </form>
+        </div>
+
+        <div class="direita"><h1>Fale conosco:</h1><!--Seção lateral com formas de entrar em contato-->
+            Central de atendimento: (31) 9 1234-1234 <br> <br>
+            Email: joao123@inexistente.com
+        </div> 
+    </div>
+    <footer><h1>Obrigado por visitar nosso site!</h1></footer>
+
+</body>
+
+</html>
